@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Quiz</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Quiz Time!</h1>
+
+    <form name="submit-to-google-sheet">
+
+      <!-- Question 1 -->
+      <div class="mb-4">
+        <h5>What is 2 + 2?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question1" id="q1option1" value="4">
+          <label class="form-check-label" for="q1option1">4</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question1" id="q1option2" value="22">
+          <label class="form-check-label" for="q1option2">22</label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="mb-4">
+        <h5>Who is the best YouTuber?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="question2" id="q2option1" value="Web Dev Simplified">
+          <label class="form-check-label" for="q2option1">Web Dev Simplified</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="question2" id="q2option2" value="Traversy Media">
+          <label class="form-check-label" for="q2option2">Traversy Media</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="question2" id="q2option3" value="Dev Ed">
+          <label class="form-check-label" for="q2option3">Dev Ed</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="question2" id="q2option4" value="Fun Fun Function">
+          <label class="form-check-label" for="q2option4">Fun Fun Function</label>
+        </div>
+      </div>
+
+      <!-- Repeat similar structure for other questions -->
+
+      <!-- Question 3 -->
+      <div class="mb-4">
+        <h5>Is web development fun?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question3" id="q3option1" value="Kinda">
+          <label class="form-check-label" for="q3option1">Kinda</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question3" id="q3option2" value="YES!!!">
+          <label class="form-check-label" for="q3option2">YES!!!</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question3" id="q3option3" value="Um no">
+          <label class="form-check-label" for="q3option3">Um no</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question3" id="q3option4" value="IDK">
+          <label class="form-check-label" for="q3option4">IDK</label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="mb-4">
+        <h5>What is 4 * 2?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question4" id="q4option1" value="6">
+          <label class="form-check-label" for="q4option1">6</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question4" id="q4option2" value="8">
+          <label class="form-check-label" for="q4option2">8</label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="mb-4">
+        <h5>What is my name?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question5" id="q5option1" value="gokul">
+          <label class="form-check-label" for="q5option1">gokul</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question5" id="q5option2" value="kirupa">
+          <label class="form-check-label" for="q5option2">kirupa</label>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="mb-4">
+        <h5>Is pallu good looking?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question6" id="q6option1" value="yes">
+          <label class="form-check-label" for="q6option1">yes</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question6" id="q6option2" value="no">
+          <label class="form-check-label" for="q6option2">no</label>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="mb-4">
+        <h5>Will you date me?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question7" id="q7option1" value="yes">
+          <label class="form-check-label" for="q7option1">yes</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="question7" id="q7option2" value="no">
+          <label class="form-check-label" for="q7option2">no</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwDFRlNpcuggc2z7s-qSTpxnAm23qpVQgSokWxs_BVh0ifMBDfVPRNNIUtdMkJBkiyP/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
